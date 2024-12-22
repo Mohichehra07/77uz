@@ -32,10 +32,10 @@ const closeModal = () =>{
         </select>
       </div>
       <div
-        class="text-gray-400 cursor-pointer hover:text-blue-500 w-[150px] h-5 flex"
+        class="text-gray-400 cursor-pointer hover:text-blue-500 w-[150px] h-5 flex justify-center items-center"
       >
-        <span class="icon-phone"></span>
-        <p>+998 88 500 50 00</p>
+      <span class="icon-phone-one-converted  text-[18px]"></span>
+      <p>+998 88 500 50 00</p>
       </div>
     </div>
     <div>
@@ -57,7 +57,7 @@ const closeModal = () =>{
         <div
           class="flex items-center justify-center gap-1 text-black transition-all cursor-pointer hover:text-blue-400"
         >
-          <span class="icon-blue-heart"></span>
+          <span class="icon-like"></span>
           <p>Избранные</p>
         </div>
       </div>
@@ -72,7 +72,7 @@ const closeModal = () =>{
    <!--Modal -->
 
    <Modal :is-open="isOpenModal" @close="closeModal">
-    <div v-for="data in firstModal" :key="data">
+    <div v-for="data in firstModal" :key="data" class="p-3">
       <strong> <h1> {{ data.title }} </h1> </strong>
       <p class="text-[12px] text-[#8E9297]"> {{ data.text }} </p><br>
 
@@ -87,7 +87,7 @@ const closeModal = () =>{
         </label><br>
         <router-link class="text-[#388FF3] text-[12px]" to="#">{{data.parol}}</router-link><br><br>
 
-        <button class="border-none bg-[#388FF3] m-2 text-[white] w-[338px] h-[44px] rounded-lg"> {{ data.login }} </button>
+        <button class="border-none bg-[#388FF3] m-2 text-[white] w-[338px] h-[44px] rounded-lg mt-20"> {{ data.login }} </button>
         <h3 class="text-[#8E9297] text-[12px] text-center"> {{ data.want }} </h3>
         <button class="border m-2 border-blue-500 text-[#388FF3] w-[338px] h-[44px] rounded-lg"> {{ data.sumbit }} </button>
         

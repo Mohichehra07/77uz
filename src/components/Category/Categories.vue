@@ -8,8 +8,6 @@ import SkletLoading from "../UI/SkletLoading.vue";
 const categories = ref([]);
  const loading = ref(false);
 
-
-
 function loadCategory() {
   loading.value = true;
 }
@@ -21,7 +19,7 @@ function loadCategory() {
       count: item.product_count
     }));
     loading.value = false;
-  }, 1000);
+  }, 700);
 
 
 onMounted(() => {
@@ -40,7 +38,7 @@ onMounted(() => {
    </div>
   <section class="relative bg-white ">
 
-    <div class="grid pb-10 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 containerMain" v-show="!loading">
+    <div class="grid pb-10 mt-10 md:grid-cols-2 lg:grid-cols-3 containerMain" v-show="!loading">
       <CategoriesItem v-for="item in categories" :item="item" />
     </div>
 

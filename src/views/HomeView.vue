@@ -1,9 +1,9 @@
 <script setup>
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
-import card from "@/components/Ads/card.vue";
-import Categories from "@/components/Category/Categories.vue";
 
+import Categories from "@/components/Category/Categories.vue";
+import Products from "@/components/Ads/Products.vue";
 </script>
 
 <template>
@@ -11,8 +11,7 @@ import Categories from "@/components/Category/Categories.vue";
     <Navbar />
     <div>
       <Categories  />
-      <card />
-        
+      <Products />  
       
     </div>
     <Footer  />

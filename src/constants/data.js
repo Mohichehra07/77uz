@@ -1,6 +1,6 @@
 export const ads = [
   {
-    // img: "../public/products/cap.png",
+    img: "../public/products/cap.png",
     location: "г. Ташкент",
     descraption: "Кепки Corneliani Diamond for him edition.",
     date: "Вчера, 19:20",

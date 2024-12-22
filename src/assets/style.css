@@ -1,4 +1,4 @@
-@import "./icomoon2/style";
+@import "./icomoon/style";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +7,7 @@
 body{
   background-color: gray
 }
-/* .cotainerMain{
-  @apply container px-[60px] mx-auto;
-} */
+.cotainerMain{
+  @apply container px-6 mx-auto;
+}
 

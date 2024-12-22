@@ -19,18 +19,18 @@ const toggleRotate = () => {
 
   <div
     @click="toggleRotate"
-    class="flex  items-center cursor-pointer group shadow-3.5xl cotainerMain pt-10"
+    class="flex   items-center cursor-pointer group shadow-3.5xl cotainerMain pt-5"
   > 
     <div
       class="w-16 h-16 bg-white rounded-xl flex items-center justify-center shadow-icon relative z-[1] border border-gray-4  group-hover:bg-blue-400 duration-300 transition-300"
     >
       <i
         :class="item.icon"
-        class="text-3xl text-blue-400 group-hover:text-white"
+        class="text-3xl text-blue-400  group-hover:text-white"
       ></i>
     </div>
     <div
-      class="rounded- group-hover:border-blue-500 bg-white border border-gray-300 shadow py-[22px] pl-11 pr-3 -ml-8 w-full flex justify-between items-center relative z-0 transition-300 duration-300"
+      class="rounded- group-hover:border-blue-500 bg-white border border-gray-300 shadow py-[22px] pl-11 pr-3 -ml-8 w-full rounded-lg flex justify-between items-center relative z-0 transition-300 duration-300"
     >
       <div class="flex flex-col gap-1 text-left">
         <h2
